@@ -9,6 +9,9 @@ const  ConformOSchema = new mongoose.Schema({
     riderid: {
         type: String,
     },
+    orderstatus: {
+        type: String,default:"Pending"
+    }
 });
 
 mongoose.model('conformorder', ConformOSchema);
