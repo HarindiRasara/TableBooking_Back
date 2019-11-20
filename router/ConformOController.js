@@ -15,6 +15,7 @@ router.post('/', (req, res) => {
         ridername:req.body.ridername,
         riderid:req.body.riderid,
         totalcost:req.body.totalcost,
+        orderstatus:req.body.orderstatus,
     });
     ConformO.save((err,doc) =>{
       if(!err){
